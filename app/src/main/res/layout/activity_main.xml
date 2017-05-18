@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--weightSum kan användas för att sätta upp proportionella objekt. Layoutweight 1 används för att
+objekt i listan ska ha samma storlek.  LinearLayout 120dp borde lösas smidigare men annars fungerar bra-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_mainmenu"
+        android:contentDescription="Banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icon_food"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icon_hiking"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick2"/>
+
+        <ImageButton
+
+            android:id="@+id/imageButton3"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boop"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick3" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boop"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick2" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boop"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick2" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boop"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner_messageoftheday" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Woof" />
+
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/doggo"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:minHeight="150dp"
+        android:minWidth="150dp" />
+
+
+
+
+
+
+
+</LinearLayout>
