@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<!--weightSum kan användas för att sätta upp proportionella objekt. Layoutweight 1 används för att
+<!--checking versioncontrol weightSum kan användas för att sätta upp proportionella objekt. Layoutweight 1 används för att
 objekt i listan ska ha samma storlek.  LinearLayout 120dp borde lösas smidigare men annars fungerar bra-->
     <ImageView
         android:id="@+id/imageView"
