@@ -61,7 +61,7 @@ objekt i listan ska ha h samma storlek.  LinearLayout 120dp borde lösas smidiga
             android:layout_height="fill_parent"
             android:background="@drawable/boop"
             android:contentDescription="@string/bildknapp"
-            android:onClick="klick2" />
+            android:onClick="klick4" />
 
         <ImageButton
             android:id="@+id/imageButton5"
@@ -70,7 +70,7 @@ objekt i listan ska ha h samma storlek.  LinearLayout 120dp borde lösas smidiga
             android:layout_height="fill_parent"
             android:background="@drawable/boop"
             android:contentDescription="@string/bildknapp"
-            android:onClick="klick2" />
+            android:onClick="klick5" />
 
 
         <ImageButton
@@ -80,7 +80,7 @@ objekt i listan ska ha h samma storlek.  LinearLayout 120dp borde lösas smidiga
             android:layout_height="fill_parent"
             android:background="@drawable/boop"
             android:contentDescription="@string/bildknapp"
-            android:onClick="klick2" />
+            android:onClick="klick6" />
 
     </LinearLayout>
 

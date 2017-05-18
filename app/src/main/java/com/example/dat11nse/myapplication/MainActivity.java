@@ -29,4 +29,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void klick4(View view) {
+        Intent intent = new Intent (this, TabelActivity.class);
+        intent.putExtra("whichButton", "Knapp4");
+        startActivity(intent);
+
+    }
+    public void klick5(View view) {
+        Intent intent = new Intent (this, TabelActivity.class);
+        intent.putExtra("whichButton", "Knapp5");
+        startActivity(intent);
+
+    }
+    public void klick6(View view) {
+        Intent intent = new Intent (this, TabelActivity.class);
+        intent.putExtra("whichButton", "Knapp6");
+        startActivity(intent);
+
+    }
 }
