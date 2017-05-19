@@ -12,7 +12,8 @@ public class TabelActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         String knapp = intent.getStringExtra("whichButton");
-        TextView t = (TextView) findViewById(R.id.textView3);
         setContentView(R.layout.activity_tabel);
+        TextView t = (TextView) findViewById(R.id.textView3);
+        t.setText(knapp);
     }
 }

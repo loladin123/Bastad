@@ -8,9 +8,9 @@ objekt i listan ska ha h samma storlek.  LinearLayout 120dp borde lösas smidiga
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/banner_mainmenu"
-        android:contentDescription="Banner" />
+        android:layout_height="50dp"
+        android:background="@drawable/ic_banner_mainmenu"
+        android:contentDescription="banner" />
 
     <LinearLayout
         android:layout_width="match_parent"
