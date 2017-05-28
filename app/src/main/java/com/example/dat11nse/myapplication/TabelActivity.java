@@ -14,6 +14,6 @@ public class TabelActivity extends AppCompatActivity {
         String knapp = intent.getStringExtra("whichButton");
         setContentView(R.layout.activity_tabel);
         TextView t = (TextView) findViewById(R.id.textView3);
-        t.setText(knapp);
+        t.setText("Lista med saker relaterat till:" + knapp);
     }
 }

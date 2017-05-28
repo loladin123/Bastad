@@ -20,31 +20,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void klick2(View view) {
-        Intent intent = new Intent (this, Main3Activity.class);
+        Intent intent = new Intent (this, TabelActivity.class);
+        intent.putExtra("whichButton", "Mat");
         startActivity(intent);
-
     }
     public void klick3(View view) {
-        Intent intent = new Intent (this, Main4Activity.class);
+        Intent intent = new Intent (this, TabelActivity.class);
+        intent.putExtra("whichButton", "Evenemang");
         startActivity(intent);
-
     }
-
     public void klick4(View view) {
         Intent intent = new Intent (this, TabelActivity.class);
-        intent.putExtra("whichButton", "Knapp4");
+        intent.putExtra("whichButton", "Campinginfo");
         startActivity(intent);
 
     }
     public void klick5(View view) {
         Intent intent = new Intent (this, TabelActivity.class);
-        intent.putExtra("whichButton", "Knapp5");
-        startActivity(intent);
-
-    }
-    public void klick6(View view) {
-        Intent intent = new Intent (this, TabelActivity.class);
-        intent.putExtra("whichButton", "Knapp6");
+        intent.putExtra("whichButton", "Turistinfo");
         startActivity(intent);
 
     }

@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.dat11nse.myapplication.Main3Activity">
+    android:paddingTop="15dp"
+    android:background="@drawable/bakgrund"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <!--checking versioncontrol weightSum kan användas för att sätta upp proportionella objekt. Layoutweight 1 används för att
+    objekt i listan ska ha h samma storlek.  LinearLayout 120dp borde lösas smidigare men annars fungerar bra-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/ic_banner_matodryck"
+        android:contentDescription="banner" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Wombo Combo"
-        android:id="@+id/textView"
-        android:layout_marginTop="208dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/vit_transparent"
+        android:divider="#FF000000"
+        android:dividerHeight="2dp"
+        android:entries="@array/sports_array"
+        android:scrollbars="horizontal" />
+
+</LinearLayout>

@@ -1,34 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.dat11nse.myapplication.Main2Activity">
-
+    android:paddingTop="15dp"
+    android:background="@drawable/bakgrund"
+    android:orientation="vertical">
+    <!--checking versioncontrol weightSum kan användas för att sätta upp proportionella objekt. Layoutweight 1 används för att
+    objekt i listan ska ha h samma storlek.  LinearLayout 120dp borde lösas smidigare men annars fungerar bra-->
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
-        android:background="@drawable/banner_food"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/ic_banner_aktivitet"
+        android:contentDescription="banner" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:background="@drawable/aff"
-        android:cropToPadding="true"
-        android:maxHeight="1dp"
-        android:maxWidth="15dp"
-        android:minHeight="1dp"
-        android:minWidth="15dp"
-        android:scaleType="centerCrop"
-        android:layout_width="wrap_content"
-        android:layout_height="280dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="41dp" />
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="60dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_knapp_avkoppling"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_knapp_cykling"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp">
+
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_knapp_golf"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick3" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_knapp_sevardheter"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick4" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp">
+
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_knapp_tennis"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick5" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_knapp_vandring"
+            android:contentDescription="@string/bildknapp"
+            android:onClick="klick6" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

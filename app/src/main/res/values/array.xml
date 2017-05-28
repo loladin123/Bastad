@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sports_array">
+        <item>PeppesBodega</item>
+        <item>Powered by:</item>
+        <item>Lasse</item>
+    </string-array>
+</resources>
