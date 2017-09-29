@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void klick2(View view) {
-        Intent intent = new Intent (this, TabelActivity.class);
+        Intent intent = new Intent (this, tabeltest.class);
         intent.putExtra("whichButton", "Mat");
         startActivity(intent);
     }
