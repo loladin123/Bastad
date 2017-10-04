@@ -34,7 +34,10 @@
             android:name=".TabelActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".tabeltest"></activity>
+        <activity
+            android:name=".tabeltest"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

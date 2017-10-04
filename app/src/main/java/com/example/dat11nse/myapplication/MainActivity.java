@@ -35,7 +35,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
     public void klick5(View view) {
+        Intent intent = new Intent (this, TabelActivity.class);
+        intent.putExtra("whichButton", "Lokalt");
+        startActivity(intent);
+
+    }
+
+    public void klick6(View view) {
         Intent intent = new Intent (this, TabelActivity.class);
         intent.putExtra("whichButton", "Turistinfo");
         startActivity(intent);
